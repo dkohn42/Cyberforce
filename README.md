@@ -1,4 +1,4 @@
-# Website: https://dkohn42.github.io
+# Website:
 ### Run the code
 The code should run using any standard browser without modifications.
 ### Outside resources
