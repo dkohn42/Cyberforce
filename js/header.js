@@ -1,13 +1,12 @@
 let page_list = ["index", "contact", "manufacturing", "solar_generation", "login"]
 // strip away all URL information except the filename, minus .html
 let currentpage = document.location.href.split("/").pop().split(".")[0];
-console.log(currentpage);
 
 let header = document.getElementById("header");
 header.innerHTML = `
 <div>
   <nav class="navbar navbar-expand navbar-default fixed-top navbar-dark">
-      <a class="navbar-brand" href="../index.html">
+      <a class="navbar-brand" href="./index.html">
         <img class="brand-img" src="/images/sole-zon-solis.png" width="60" height="60" class="d-inline-block align-top" alt="">
       </a>                                      
       <div class="container-fluid">
@@ -22,13 +21,6 @@ header.innerHTML = `
 </div> 
 `
 // Index.html path
-if (currentpage === "index" || currentpage === '') {
-    for (let i = 1; i < page_list.length; i++) {
-        let nav_item = document.getElementById(page_list[i])
-        nav_item.href = "./pages/" + page_list[i] + ".html";
-    }
-}
-else {
     for (let i = 1; i < page_list.length; i++) {
         let nav_item = document.getElementById(page_list[i])
         if (currentpage === page_list[i]) {
@@ -36,7 +28,6 @@ else {
             nav_item.ariaCurrent = "page";
         }
     }
-}
 
 
 {/* <div class="icon">

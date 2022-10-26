@@ -14,33 +14,12 @@ nav {
     background-color: #080808;
 }
 
-.navbar-icon {
-    color: white;
-    border-radius: 100%;
-}
-
-.navbar-icon:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-    border-radius: 100%;
-}
-
 .footer {   
     position: fixed;
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
     line-height: 150px; /* Vertically center the text there */
-}
-.footer-icon {
-    color: white;
-    border-radius: 100%;
-}
-
-.footer-icon:hover {
-    color: black;
-    background-color: rgb(255, 255, 255);
-    border-radius: 100%;
 }
 
 body {
@@ -55,8 +34,20 @@ body {
     background-color: rgb(48, 60, 78);
   } 
 
-.my-text-color {
-    color: rgba(172, 255, 47, 0.651);
+.footer-element {
+    line-height: 150px; /* Vertically center the text there */
+}
+
+.footer-text {
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    height: 20px;
+    margin: 5px;
+}
+
+.footer-newsletter {
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
 }
 
 .page-element {
