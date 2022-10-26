@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Darin Kohn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/all-pages.css" />
+    <link rel="stylesheet" href="../css/projects-info.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main>
+      <div class="px-sm-3">
+        <div class="row d-flex mb-4">
+          <div class="col-lg-4 col-md-12 mb-3">
+            <img src="../images/robot.gif" alt="A gif of Robby (@) picking up a room of cans (o)" title="Robby in action">
+          </div>
+          <div class="col-lg-7 col-md-10">
+            <div class="bg-element page-element">
+              <p>
+                <h4>Robby the Robot - Q-Learning</h4>
+                Robby learns how to efficiently pick up cans through a type a reinforcement learning called Q-Learning. 
+                The robot preceives the state of the world around and maps those states to actions in a Q-table. The 
+                action of 'picking up a can' when the robot's state is 'standing on a can' provides a reward. Over 
+                millions of trials played, these rewards are back-filled through the table to provide the robot with a
+                strategy for solving the problem.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-2">
+            <a class="btn project-icon" href="https://github.com/d-kohn/Robot-Q-Learning">
+              <i class="fa fa-github fa-4x"></i>
+              <span class="visually-hidden">Github</span>
+            </a>                                    
+          </div>
+         </div>
+
+        <hr>
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-12 mb-3">
+            <img src="../images/blackjack.png" alt="A blackjack strategy table created by the Q-Learning AI" title="AI created blackjack strategy table">
+          </div>
+          <div class="col-lg-7 col-md-10">
+            <div class="bg-element page-element">
+              <p>
+                <h4>Blackjack - Q-Learning</h4>
+                This is another Q-Learning project, but with a larger state-space. The goal in this project
+                is for the AI to learn to play Blackjack against a dealer. At first the AI is playing completely
+                randomly. As it wins the Q-table begins to fill with back-propogated rewards. Eventually, a
+                the performance of the AI begins to approach a net-zero win loss ratio. Since the odds of
+                winning/losing in Blackjack is around 50/50, this is the best outcome without making a card
+                counting AI. The image left or above shows a final strategy Q-table learned by the AI.
+              </p>  
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-2">
+            <a class="btn project-icon" href="https://github.com/d-kohn/AI-Blackjack">
+              <i class="fa fa-github fa-4x"></i>
+              <span class="visually-hidden">Github</span>
+            </a>                                    
+          </div>
+        </div>
+
+        <hr>
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-12 mb-3">
+            <img src="../images/irc.png" alt="IRC Chat client window" title="IRC Chat client">
+          </div>
+          <div class="col-lg-7 col-md-10">
+            <div class="bg-element page-element">
+              <p>
+                <h4>IRC Chat - Client and Server - RFC Project</h4>
+                For this project, I created an IRC Chat RFC. The protocol standardized communication between
+                a client and server for logins, creating/joining a chat room, and sending a message. The client
+                program, shown in the image, we created to demonstrate the RFC was complete and provided all of
+                the required functionality. The client was written using Python and utilized Websockets and
+                JSON to communicate with the server.
+              </p>
+            </div>  
+          </div>
+          <div class="col-lg-1 col-md-2">
+            <a class="btn project-icon" href="https://github.com/d-kohn/IRC-Client">
+              <i class="fa fa-github fa-4x"></i>
+              <span class="visually-hidden">Github</span>
+            </a>                                    
+          </div>
+         </div>
+        <hr>
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-12 mb-3">
+            <img src="../images/chess.png" alt="An image of a chessboard and player information" title="EtherChess web interface">
+          </div>
+          <div class="col-lg-7 col-md-10">
+            <div class="bg-element page-element">
+              <p>
+              <h4>Ethereum Chess - Ethereum Smart Contract Development</h4>
+              Using the Ropsten Ethereum Test Blockchain, I deployed a smart contract, written with Vyper. The 
+              smart contract accepted an Ethereum token from each player and stored it for the duration of 
+              the game as well as storing the state of the chess game, checking valid move, and 'check' 
+              conditions. Each player interacted with the Ethereum blockchain to check and update their next
+              move. Once a player was unable to move, or failed to make a move, for 24 hours, then the winner
+              could claim their prize. An html page and javascript were used to interact with the smart contract
+              on the blockchain. Using the real Ethereum blockchain to play this would cost about 0.01 ETH, or 
+              $20, per move.
+            </p>
+            </div>
+          </div>
+          <div class="col-lg-1 col-md-2">
+            <a class="btn project-icon" href="https://gitlab.com/dkohn/bc-f21-darin-kohn-dkohn/-/tree/main/final">
+              <i class="fa fa-gitlab fa-3x"></i>
+              <span class="visually-hidden">Gitlab</span>
+            </a>                                    
+          </div>
+         </div>
+      </div>
+    </main>
+    <div id="footer"></div>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+  </body>
+</html>
