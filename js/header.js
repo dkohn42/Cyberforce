@@ -5,7 +5,7 @@ console.log(currentpage);
 
 let header = document.getElementById("header");
 header.innerHTML = `
-<header>
+<div>
   <nav class="navbar navbar-expand navbar-default fixed-top navbar-dark">
       <a class="navbar-brand" href="../index.html">
         <img class="brand-img" src="/images/sole-zon-solis.png" width="60" height="60" class="d-inline-block align-top" alt="">
@@ -19,7 +19,7 @@ header.innerHTML = `
         </ul>
       </div>
   </nav>
-</header> 
+</div> 
 `
 // Index.html path
 if (currentpage === "index" || currentpage === '') {
