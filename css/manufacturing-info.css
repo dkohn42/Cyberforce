@@ -1,0 +1,23 @@
+
+
+
+.bootstrap-grid .row > * {
+  /* border: 1px solid var(--white); */
+  margin-bottom: 25px;
+}
+img {
+  border-radius: 10px;
+}
+
+figure {
+  width: 250px;
+  max-height: 100%;
+}
+
+.caption-color {
+  color:greenyellow;
+}
+
+.pic {
+  width: 270px;
+}

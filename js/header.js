@@ -1,4 +1,4 @@
-let page_list = ["index", "about", "resume", "projects", "contact"]
+let page_list = ["index", "contact", "manufacturing", "solar_generation", "login"]
 // strip away all URL information except the filename, minus .html
 let currentpage = document.location.href.split("/").pop().split(".")[0];
 console.log(currentpage);
@@ -7,25 +7,17 @@ let header = document.getElementById("header");
 header.innerHTML = `
 <header>
   <nav class="navbar navbar-expand navbar-default fixed-top navbar-dark">
-    <div class="container-fluid">
-      <div class="navbar-nav d-flex">
-        <a class="navbar-brand" href="../index.html">Darin Kohn</a>
-        <a id="about" class="nav-link" href="./about.html">About</a>
-        <a id="resume" class="nav-link" href="./resume.html">Resume</a>
-        <a id="projects" class="nav-link" href="./projects.html">Projects</a>
-        <a id="contact" class="nav-link" href="./contact.html">Contact</a>
+      <a class="navbar-brand" href="../index.html">
+        <img class="brand-img" src="/images/sole-zon-solis.png" width="60" height="60" class="d-inline-block align-top" alt="">
+      </a>                                      
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li><a id="contact" class="nav-item nav-link" href="./contact.html">Contact Us</a></li>
+          <li><a id="manufacturing" class="nav-item nav-link" href="./manufacturing.html">Manufacturing</a></li>
+          <li><a id="solar_generation" class="nav-item nav-link" href="./solar_generation.html">Solar Generation</a></li>
+          <li><a id="login" class="nav-item nav-link" href="./login.html">Login</a></li>
+        </ul>
       </div>
-      <div class="icon">
-        <a class="btn navbar-icon" href="https://github.com/d-kohn">
-          <i class="fa fa-github fa-2x"></i>
-          <span class="visually-hidden">Github</span>
-        </a>                                    
-        <a class="btn navbar-icon" href="https://www.linkedin.com/in/darin-kohn-895296239/">
-          <i class="fa fa-linkedin fa-2x"></i>
-          <span class="visually-hidden">Linkedin</span>
-        </a>
-      </div>
-    </div>
   </nav>
 </header> 
 `
@@ -45,3 +37,15 @@ else {
         }
     }
 }
+
+
+{/* <div class="icon">
+<a class="btn navbar-icon" href="https://github.com/d-kohn">
+  <i class="fa fa-github fa-2x"></i>
+  <span class="visually-hidden">Github</span>
+</a>                                    
+<a class="btn navbar-icon" href="https://www.linkedin.com/in/darin-kohn-895296239/">
+  <i class="fa fa-linkedin fa-2x"></i>
+  <span class="visually-hidden">Linkedin</span>
+</a>
+</div> */}
