@@ -1,0 +1,29 @@
+.jumbotron .container { 
+    max-width: 100%; /* allows the jumbotron to adjust on smaller widths */
+    background-color: #222;
+  }
+
+.jumbotron p { 
+  text-align: center; /* centers the heading */
+  color: #DDD;
+  font-family: 'Raleway', Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  text-transform: uppercase;
+}
+
+.jumbotron img { 
+  text-align: center; /* centers the heading */
+  margin-top: 50px;
+} 
+
+.title { 
+    text-align: center; /* centers the heading */
+    color: #DDD;
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: red;
+ 
+  }
